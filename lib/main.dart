@@ -1,32 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:projecho/pages/onboard.dart';
-// import 'package:projecho/pages/home.dart';
 import 'package:projecho/pages/login.dart';
-import 'package:projecho/pages/Signup/enteruname.dart'; // Ensure this file contains the Usernamescreen widget
+import 'package:projecho/pages/Signup/enteruname.dart'; // Correct import
+import 'package:projecho/pages/Signup/usertype.dart'; // Ensure this exists
+import 'package:projecho/pages/Signup/birthdate.dart'; // Corrected import
+import 'package:projecho/pages/Signup/gender.dart';
+import 'package:projecho/pages/Signup/auth.dart';
 
 void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: MyOnboardingScreen(),
-    routes: {
-      '/login': (_) => LoginScreen(), // Your main screen here
-      '/username': (context) => Usernamescreen(), // Your username screen here
-    },
-  ));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner:false,
-      home: Scaffold()
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const MyOnboardingScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/username': (context) => const Usernamescreen(), // Correct route
+        '/usertype': (context) => const UserTypeScreen(),
+        '/birthdate': (context) => const BirthdateScreen(), // Ensure this exists
+        '/gender': (context) => const GenderSelectionScreen(), // Add this route
+        '/auth': (context) => const RegistrationMethodScreen(), // Ensure this exists
+      },
     );
   }
 }
-
-
-

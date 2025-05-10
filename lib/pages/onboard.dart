@@ -74,6 +74,6 @@ class MyOnboardingScreen extends StatelessWidget {
         },
         animationInMilliseconds: 300,
       ),
-    );
+    );  
   }
 }

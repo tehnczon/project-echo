@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Usernamescreen extends StatefulWidget {
-  const Usernamescreen({super.key});
+class BirthdateScreen extends StatefulWidget {
+  const BirthdateScreen({super.key});
 
   @override
-  State<Usernamescreen> createState() => _UsernamescreenState();
+  State<BirthdateScreen> createState() => _BirthdateScreenState();
 }
 
-class _UsernamescreenState extends State<Usernamescreen> with TickerProviderStateMixin {
-  final TextEditingController _usernameController = TextEditingController();
-  bool _isVisible = false; // Control visibility for animations
+class _BirthdateScreenState extends State<BirthdateScreen> with TickerProviderStateMixin {
+  DateTime? _selectedDate;
+  bool _isVisible = false;
 
   @override
   void initState() {
     super.initState();
-    _animatePage(); // Start animation when page is loaded
+    _animatePage(); // Start animation when the page is loaded
   }
 
   void _animatePage() {
@@ -25,9 +25,27 @@ class _UsernamescreenState extends State<Usernamescreen> with TickerProviderStat
     });
   }
 
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime initialDate = DateTime.now();
+    final DateTime firstDate = DateTime(1900);
+    final DateTime lastDate = DateTime(2100);
+
+    final DateTime? picked = await showDatePicker(
+      context: context,
+      initialDate: _selectedDate ?? initialDate,
+      firstDate: firstDate,
+      lastDate: lastDate,
+    );
+
+    if (picked != null && picked != _selectedDate) {
+      setState(() {
+        _selectedDate = picked;
+      });
+    }
+  }
+
   @override
   void dispose() {
-    _usernameController.dispose();
     super.dispose();
   }
 
@@ -55,7 +73,7 @@ class _UsernamescreenState extends State<Usernamescreen> with TickerProviderStat
               opacity: _isVisible ? 1 : 0,
               duration: const Duration(seconds: 1),
               child: const Text(
-                "What should we call you?",
+                "What’s your birthday?",
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -67,7 +85,7 @@ class _UsernamescreenState extends State<Usernamescreen> with TickerProviderStat
               opacity: _isVisible ? 1 : 0,
               duration: const Duration(seconds: 1),
               child: const Text(
-                "Enter username/alias.",
+                "Choose your date of birth.",
                 style: TextStyle(
                   fontSize: 14,
                   color: Colors.grey,
@@ -76,21 +94,27 @@ class _UsernamescreenState extends State<Usernamescreen> with TickerProviderStat
             ),
             const SizedBox(height: 24),
 
-            // Slide and Fade Animation for TextField
+            // Slide and Fade Animation for DatePicker
             AnimatedContainer(
               duration: const Duration(seconds: 1),
               curve: Curves.easeInOut,
               transform: _isVisible ? Matrix4.identity() : Matrix4.translationValues(0, 30, 0),
-              child: TextField(
-                controller: _usernameController,
-                decoration: InputDecoration(
-                  hintText: "username",
-                  hintStyle: TextStyle(
-                    color: Colors.black.withOpacity(0.4), // 40% opacity
-                  ),
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
+              child: GestureDetector(
+                onTap: () => _selectDate(context),
+                child: AbsorbPointer(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: _selectedDate == null
+                          ? "Select your birthdate"
+                          : "${_selectedDate!.toLocal()}".split(' ')[0],
+                      hintStyle: TextStyle(
+                        color: Colors.black.withOpacity(0.4),
+                      ),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
                   ),
                 ),
               ),
@@ -107,14 +131,13 @@ class _UsernamescreenState extends State<Usernamescreen> with TickerProviderStat
                 height: 48,
                 child: ElevatedButton(
                   onPressed: () {
-                    final username = _usernameController.text.trim();
-                    if (username.isEmpty) {
+                    if (_selectedDate == null) {
                       ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Please enter a username')),
+                        const SnackBar(content: Text('Please select your birthdate')),
                       );
                     } else {
-                      debugPrint("Entered username: $username");
-                      Navigator.pushNamed(context, '/usertype'); // Navigate only when valid
+                      debugPrint("Selected Birthdate: $_selectedDate");
+                      Navigator.pushNamed(context, '/gender'); // Navigate to Gender selection screen
                     }
                   },
                   style: ElevatedButton.styleFrom(
