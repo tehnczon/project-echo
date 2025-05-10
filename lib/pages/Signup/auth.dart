@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class RegistrationMethodScreen extends StatefulWidget {
   const RegistrationMethodScreen({super.key});
@@ -9,11 +10,38 @@ class RegistrationMethodScreen extends StatefulWidget {
 
 class _RegistrationMethodScreenState extends State<RegistrationMethodScreen> {
   final TextEditingController _mobileController = TextEditingController();
+  final GoogleSignIn _googleSignIn = GoogleSignIn();
 
   @override
   void dispose() {
     _mobileController.dispose();
     super.dispose();
+  }
+
+  Future<void> _signInWithGoogle() async {
+    try {
+      // Initiate Google Sign-In
+      final GoogleSignInAccount? user = await _googleSignIn.signIn();
+
+      if (user != null) {
+        // Google Sign-In successful, get user info
+        print("Signed in as: ${user.displayName}");
+        
+        // You can get additional info like email and profile picture
+        final email = user.email;
+        final displayName = user.displayName;
+        final photoUrl = user.photoUrl;
+
+        // You can use this data as needed, e.g., save to a database, navigate, etc.
+        // For example, navigate to the next screen:
+        Navigator.pushNamed(context, '/password');
+      }
+    } catch (error) {
+      print('Google sign-in failed: $error');
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Google Sign-In failed')),
+      );
+    }
   }
 
   @override
@@ -96,9 +124,7 @@ class _RegistrationMethodScreenState extends State<RegistrationMethodScreen> {
             ElevatedButton.icon(
               icon: Image.asset('assets/icons/google.png', height: 24),
               label: const Text('Sign in with Google'),
-              onPressed: () {
-                // Add Google sign-in logic here
-              },
+              onPressed: _signInWithGoogle,  // Trigger the Google sign-in
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
                 foregroundColor: Colors.black,

@@ -6,6 +6,7 @@ import 'package:projecho/pages/Signup/usertype.dart'; // Ensure this exists
 import 'package:projecho/pages/Signup/birthdate.dart'; // Corrected import
 import 'package:projecho/pages/Signup/gender.dart';
 import 'package:projecho/pages/Signup/auth.dart';
+import 'package:projecho/pages/Signup/createpass.dart'; // Ensure this exists
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         '/birthdate': (context) => const BirthdateScreen(), // Ensure this exists
         '/gender': (context) => const GenderSelectionScreen(), // Add this route
         '/auth': (context) => const RegistrationMethodScreen(), // Ensure this exists
+        '/password': (context) => const PasswordScreen(), // Ensure this exists
       },
     );
   }
