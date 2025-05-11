@@ -44,10 +44,6 @@ class _BirthdateScreenState extends State<BirthdateScreen> with TickerProviderSt
     }
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {

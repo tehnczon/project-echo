@@ -78,7 +78,10 @@ class _PasswordScreenState extends State<PasswordScreen> {
               width: double.infinity,
               height: 48,
               child: ElevatedButton(
-                onPressed: _handleSubmit,
+                onPressed: () {
+                  _handleSubmit();
+                  Navigator.pushNamed(context, '/welcome');
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.lightBlueAccent,
                   shape: RoundedRectangleBorder(

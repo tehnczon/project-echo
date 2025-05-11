@@ -12,7 +12,7 @@ class MyOnboardingScreen extends StatelessWidget {
         swipeableBody: [
           Center(
             child: Padding(
-              padding: EdgeInsets.all(40.0),
+              padding: EdgeInsets.all(30.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -27,7 +27,7 @@ class MyOnboardingScreen extends StatelessWidget {
                   Text(
                     'Let\'s get started',
                     style: GoogleFonts.poppins(
-                      fontSize: 37,
+                      fontSize: 27,
                       fontWeight: FontWeight.bold,
                       color: Colors.black, // Optional: Add color if needed
                     ),
