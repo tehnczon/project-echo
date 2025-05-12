@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projecho/pages/Signup/welcome.dart';
 
 class PasswordScreen extends StatefulWidget {
   const PasswordScreen({super.key});
@@ -18,6 +19,12 @@ class _PasswordScreenState extends State<PasswordScreen> {
     super.dispose();
   }
 
+  void _showSnackBar(String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(message)),
+    );
+  }
+
   void _handleSubmit() {
     final password = _passwordController.text.trim();
     final confirmPassword = _confirmPasswordController.text.trim();
@@ -28,15 +35,18 @@ class _PasswordScreenState extends State<PasswordScreen> {
       _showSnackBar('Passwords do not match');
     } else {
       debugPrint('Password set successfully: $password');
-      // TODO: Send password to server or proceed to next step
-      // Navigator.pushNamed(context, '/nextScreen');
+      // Navigate with fade transition
+      Navigator.of(context).pushReplacement(
+        PageRouteBuilder(
+          transitionDuration: const Duration(milliseconds: 600),
+          pageBuilder: (context, animation, secondaryAnimation) => const WelcomeScreen(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            final fade = Tween<double>(begin: 0.0, end: 1.0).animate(animation);
+            return FadeTransition(opacity: fade, child: child);
+          },
+        ),
+      );
     }
-  }
-
-  void _showSnackBar(String message) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(message)),
-    );
   }
 
   @override
@@ -78,10 +88,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
               width: double.infinity,
               height: 48,
               child: ElevatedButton(
-                onPressed: () {
-                  _handleSubmit();
-                  Navigator.pushNamed(context, '/welcome');
-                },
+                onPressed: _handleSubmit,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.lightBlueAccent,
                   shape: RoundedRectangleBorder(

@@ -15,6 +15,15 @@ import 'package:projecho/pages/Signup/createpass.dart';
 import 'package:projecho/pages/Signup/otp.dart';
 import 'package:projecho/pages/Signup/welcome.dart';
 
+//home
+import 'package:projecho/pages/home.dart';
+import 'package:projecho/pages/homefeed/profile.dart';
+
+
+//menu
+import 'package:projecho/pages/homefeed/menu/insights.dart';
+import 'package:projecho/pages/homefeed/menu/terms&cons.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -50,7 +59,18 @@ class MyApp extends StatelessWidget {
           );
         },
         '/welcome': (context) => const WelcomeScreen(),
+
+        // home screen
+        '/home': (context) => const HomeScreen(),
+        '/profile': (context) => const ProfileScreen(),
+
+        //menu screes
+        '/insights': (context) => const InsightsScreen(),
+        '/terms': (context) => const TermsAndConditionsScreen(),
+
       },
+
+
     );
   }
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:projecho/pages/home.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const LoginScreen(),
         '/username': (context) => const UsernameScreen(),
+        '/home': (context) => const HomeScreen(), // ← Add this
       },
     );
   }
@@ -24,8 +27,14 @@ class MyApp extends StatelessWidget {
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
+  static const mockEmail = 'user@example.com';
+  static const mockPassword = '123456';
+
   @override
   Widget build(BuildContext context) {
+    final emailController = TextEditingController();
+    final passwordController = TextEditingController();
+
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -34,13 +43,13 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset('assets/logo/logo.PNG', height: 150),
-
               const SizedBox(height: 10),
 
-              const SizedBox(
+              SizedBox(
                 height: 40,
                 child: TextField(
-                  decoration: InputDecoration(
+                  controller: emailController,
+                  decoration: const InputDecoration(
                     labelText: 'Email',
                     labelStyle: TextStyle(fontSize: 12),
                     border: OutlineInputBorder(),
@@ -50,11 +59,12 @@ class LoginScreen extends StatelessWidget {
 
               const SizedBox(height: 16),
 
-              const SizedBox(
+              SizedBox(
                 height: 40,
                 child: TextField(
+                  controller: passwordController,
                   obscureText: true,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Password',
                     labelStyle: TextStyle(fontSize: 12),
                     border: OutlineInputBorder(),
@@ -74,7 +84,29 @@ class LoginScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    final email = emailController.text.trim();
+                    final password = passwordController.text.trim();
+
+                    if (email == mockEmail && password == mockPassword) {
+  Navigator.pushReplacementNamed(context, '/home');
+} else {
+  showDialog(
+    context: context,
+    builder: (_) => AlertDialog(
+      title: const Text('Login Failed'),
+      content: const Text('Incorrect email or password.'),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('Try Again'),
+        ),
+      ],
+    ),
+  );
+}
+
+                  },
                   child: const Text(
                     'Log in',
                     style: TextStyle(
@@ -85,6 +117,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
+
 
               const SizedBox(height: 8),
 
@@ -166,7 +199,10 @@ class LoginScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                     Navigator.pushNamed(context, '/terms');
+
+                    },
                     child: const Text(
                       "Terms of Use",
                       style: TextStyle(color: Color.fromARGB(255, 125, 196, 255)),

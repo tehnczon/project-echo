@@ -1,67 +1,100 @@
 import 'package:flutter/material.dart';
-import 'package:onboarding/onboarding.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class WelcomeScreen extends StatelessWidget {
+class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
+
+  @override
+  State<WelcomeScreen> createState() => _WelcomeScreenState();
+}
+
+class _WelcomeScreenState extends State<WelcomeScreen>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _fadeAnimation;
+
+  bool _isNavigating = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 400),
+    );
+    _fadeAnimation = Tween<double>(begin: 1.0, end: 0.0).animate(_controller);
+  }
+
+  void _navigate() async {
+    if (_isNavigating) return;
+    _isNavigating = true;
+
+    await _controller.forward(); // Play fade out
+    if (mounted) {
+      Navigator.of(context).pushReplacementNamed('/home');
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Onboarding(
-        swipeableBody: [
-          Center(
+      body: GestureDetector(
+        onVerticalDragEnd: (details) {
+          if (details.primaryVelocity! < 0) {
+            _navigate();
+          }
+        },
+        onTap: _navigate,
+        child: FadeTransition(
+          opacity: _fadeAnimation,
+          child: Center(
             child: Padding(
-              padding: EdgeInsets.only(left: 20, right: 20, ),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                 Image.asset(
-                  'assets/onboarding/onboarding_image.PNG',  // Correct path relative to the root of the assets folder
-                  width: 250,                                 // Adjust the size as needed
-                  height: 250,
-                 fit: BoxFit.cover,                          // Optional: Adjust how the image fits
+                  Image.asset(
+                    'assets/onboarding/onboarding_image.PNG',
+                    width: 250,
+                    height: 250,
+                    fit: BoxFit.cover,
                   ),
-                  
+                  const SizedBox(height: 20),
                   Text(
-                    'Welcome to ',
+                    'Welcome to',
                     style: GoogleFonts.poppins(
                       fontSize: 35,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black, // Optional: Add color if needed
+                      color: Colors.black,
                     ),
-                    
                     textAlign: TextAlign.center,
                   ),
-                  Padding(
-                    padding: EdgeInsets.only( left: 0),
-                    child: Text(
-                      'Project Echo        ',
-
-                      style: GoogleFonts.poppins(fontSize: 25,
-                        fontWeight: FontWeight.bold,
-                     ),
-                      textAlign: TextAlign.left,
+                  Text(
+                    'Project Echo',
+                    style: GoogleFonts.poppins(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
                     ),
+                    textAlign: TextAlign.left,
                   ),
-
-
-                  Padding(
-                    padding: EdgeInsets.only(top: 20, left: 30),
-                    child: Text(
-                      'a space to learn, connect, and be heard. Your voice matters.',
-                      style: TextStyle(fontSize: 16),
-                      textAlign: TextAlign.left,
-                    ),
+                  const SizedBox(height: 20),
+                  Text(
+                    'a space to learn, connect, and be heard. Your voice matters.',
+                    style: const TextStyle(fontSize: 16),
+                    textAlign: TextAlign.left,
                   ),
                 ],
               ),
             ),
           ),
-        ],
-       
-        animationInMilliseconds: 300,
+        ),
       ),
-    );  
+    );
   }
 }
