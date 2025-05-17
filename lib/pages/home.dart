@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:projecho/pages/homefeed/comment_screen.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -117,14 +119,15 @@ class _HomeScreenState extends State<HomeScreen> {
             const Divider(height: 1),
             // Content
             Expanded(
-              child: ListView.builder(
-                padding: const EdgeInsets.only(bottom: 70),
-                itemCount: 10,
-                itemBuilder: (context, index) {
-                  return const PostCard();
-                },
-              ),
-            ),
+  child: ListView.builder(
+    padding: const EdgeInsets.only(bottom: 70),
+    itemCount: 10,
+    itemBuilder: (context, index) {
+      return PostCard(postId: index);
+    },
+  ),
+)
+
           ],
         ),
       ),
@@ -177,7 +180,8 @@ class _MenuItem extends StatelessWidget {
 
 // Sample PostCard Widget
 class PostCard extends StatelessWidget {
-  const PostCard({super.key});
+  final int postId;
+  const PostCard({super.key, required this.postId});
 
   @override
   Widget build(BuildContext context) {
@@ -208,12 +212,20 @@ class PostCard extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Row(
-              children: const [
-                Icon(Icons.arrow_downward_outlined, size: 20),
-                SizedBox(width: 4),
-                Text('12'),
-                Spacer(),
-                Icon(Icons.chat_bubble_outline, size: 20),
+              children: [
+                const Icon(Icons.arrow_downward_outlined, size: 20),
+                const SizedBox(width: 4),
+                const Text('12'),
+                const Spacer(),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => CommentScreen(postId: postId)),
+                    );
+                  },
+                  child: const Icon(Icons.chat_bubble_outline, size: 20),
+                ),
               ],
             )
           ],

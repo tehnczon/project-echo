@@ -8,64 +8,67 @@ class MyOnboardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFEAF1F9), // Set background color here
       body: Onboarding(
         swipeableBody: [
-          Center(
-            child: Padding(
-              padding: EdgeInsets.all(30.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                    Padding(padding: EdgeInsets.only(top: 50)),
-                 Image.asset(
-                  'assets/onboarding/onboarding_image.PNG',  // Correct path relative to the root of the assets folder
-                  width: 250,                                 // Adjust the size as needed
-                  height: 250,
-                 fit: BoxFit.cover,                          // Optional: Adjust how the image fits
-                  ),
-                  SizedBox(height: 30),
-                  Text(
-                    'Let\'s get started',
-                    style: GoogleFonts.poppins(
-                      fontSize: 27,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black, // Optional: Add color if needed
+          SafeArea(
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.all(30.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const SizedBox(height: 50),
+                    Image.asset(
+                      'assets/onboarding/onboard.jpg',
+                      width: 280,
+                      height: 280,
+                      fit: BoxFit.cover,
                     ),
-                    
-                    textAlign: TextAlign.center,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(top: 20),
-                    child: Text(
+                    Text(
+                      'Let\'s get started',
+                      style: GoogleFonts.poppins(
+                        fontSize: 27,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 20),
+                    const Text(
                       'Welcome to Echo - a space to learn, connect, and be heard. Your voice matters.',
                       style: TextStyle(fontSize: 16),
                       textAlign: TextAlign.left,
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
         ],
         buildFooter: (context, netDragDistance, pagesLength, currentIndex, setIndex, slideDirection) {
           return Padding(
-            padding: const EdgeInsets.only(bottom: 150),
+            padding: EdgeInsets.only(bottom: 80),
             child: Center(
+              child: SizedBox(
+                width: 200,
+                height: 50,
                 child: ElevatedButton(
-                onPressed: () {
+                  onPressed:  () {
                   Navigator.pushReplacementNamed(context, '/login');
                 },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.lightBlueAccent, // Set the button color to sky blue
-                  shape: RoundedRectangleBorder(    
-                    borderRadius: BorderRadius.circular(5), // Rounded corners
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.lightBlueAccent,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5)),
                     ),
-                    minimumSize: Size(200, 50), // Increase button size
-                ),
-                child: const Text('Get Started',
-                  style: TextStyle(
-                    fontSize: 20, fontWeight: FontWeight.bold,
-                    color: Colors.white, // Set the text color to white
+                  ),
+                  child: Text(
+                    'Get Started',
+                    style: TextStyle(
+                      fontSize: 20, fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
@@ -74,6 +77,6 @@ class MyOnboardingScreen extends StatelessWidget {
         },
         animationInMilliseconds: 300,
       ),
-    );  
+    );
   }
 }
