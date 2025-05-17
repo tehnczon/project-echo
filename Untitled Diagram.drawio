@@ -68,7 +68,7 @@
         <mxCell id="_LMe8sHWsWOSTw_ekPAe-37" value="location" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" parent="1" vertex="1">
           <mxGeometry x="458.75" y="560" width="102.5" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_LMe8sHWsWOSTw_ekPAe-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="_LMe8sHWsWOSTw_ekPAe-40" target="_LMe8sHWsWOSTw_ekPAe-53" edge="1">
+        <mxCell id="_LMe8sHWsWOSTw_ekPAe-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="-NJHEdXc2_ys1D_Juve5-36" target="_LMe8sHWsWOSTw_ekPAe-53" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_LMe8sHWsWOSTw_ekPAe-40" value="create password" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
@@ -80,14 +80,14 @@
         <mxCell id="-NJHEdXc2_ys1D_Juve5-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_LMe8sHWsWOSTw_ekPAe-50" target="-NJHEdXc2_ys1D_Juve5-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_LMe8sHWsWOSTw_ekPAe-50" value="input irn/confimation " style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" parent="1" vertex="1">
+        <mxCell id="_LMe8sHWsWOSTw_ekPAe-50" value="input hrn/confimation " style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" parent="1" vertex="1">
           <mxGeometry x="637.75" y="440" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_LMe8sHWsWOSTw_ekPAe-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="_LMe8sHWsWOSTw_ekPAe-53" target="_LMe8sHWsWOSTw_ekPAe-55" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_LMe8sHWsWOSTw_ekPAe-53" value="welcome page" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
-          <mxGeometry x="456.25" y="669.5" width="112.5" height="30" as="geometry" />
+          <mxGeometry x="450" y="780" width="112.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_LMe8sHWsWOSTw_ekPAe-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="_LMe8sHWsWOSTw_ekPAe-55" target="_LMe8sHWsWOSTw_ekPAe-62" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -181,11 +181,14 @@
         <mxCell id="-NJHEdXc2_ys1D_Juve5-15" value="privacy policy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="1">
           <mxGeometry x="113.25" y="937" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-NJHEdXc2_ys1D_Juve5-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="-NJHEdXc2_ys1D_Juve5-17" target="_LMe8sHWsWOSTw_ekPAe-36">
+        <mxCell id="-NJHEdXc2_ys1D_Juve5-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="-NJHEdXc2_ys1D_Juve5-38" target="_LMe8sHWsWOSTw_ekPAe-36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-NJHEdXc2_ys1D_Juve5-17" value="additional confirmation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="1">
-          <mxGeometry x="637.75" y="490" width="80" height="30" as="geometry" />
+        <mxCell id="-NJHEdXc2_ys1D_Juve5-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-NJHEdXc2_ys1D_Juve5-17" target="-NJHEdXc2_ys1D_Juve5-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NJHEdXc2_ys1D_Juve5-17" value="art" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="1">
+          <mxGeometry x="717.75" y="530" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-NJHEdXc2_ys1D_Juve5-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-NJHEdXc2_ys1D_Juve5-20" target="_LMe8sHWsWOSTw_ekPAe-55">
           <mxGeometry relative="1" as="geometry" />
@@ -216,6 +219,18 @@
         </mxCell>
         <mxCell id="-NJHEdXc2_ys1D_Juve5-28" value="is number already registered?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="285" y="310" width="117" height="119" as="geometry" />
+        </mxCell>
+        <mxCell id="-NJHEdXc2_ys1D_Juve5-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_LMe8sHWsWOSTw_ekPAe-40" target="-NJHEdXc2_ys1D_Juve5-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="509" y="650" as="sourcePoint" />
+            <mxPoint x="509" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NJHEdXc2_ys1D_Juve5-36" value="confirm password" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="448.5" y="680" width="112.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-NJHEdXc2_ys1D_Juve5-38" value="viral load" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="1">
+          <mxGeometry x="630" y="580" width="80" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
