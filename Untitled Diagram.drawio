@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" version="27.0.6">
   <diagram name="Page-1" id="9R6yXRowSwLRwM4YF0jt">
-    <mxGraphModel dx="2159" dy="918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#000000,#000000)" math="0" shadow="0">
+    <mxGraphModel dx="1558" dy="496" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#000000,#000000)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -195,10 +195,10 @@
         <mxCell id="Z2BPIPwkAZa0jg8t_c1K-33" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://dart.dev/assets/img/logo/logo-white-text.svg;" parent="1" vertex="1">
           <mxGeometry x="-276" y="31" width="96.3" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Lf4XHQg1zKBJ01BfvgF0-1" value="&lt;div&gt;packages:&lt;/div&gt;&lt;div&gt;*getwidget&lt;/div&gt;&lt;div&gt;*flutter chart&lt;/div&gt;&lt;div&gt;*fluttersvg&lt;/div&gt;&lt;div&gt;*cached network image&lt;/div&gt;&lt;div&gt;*flutter animation&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Lf4XHQg1zKBJ01BfvgF0-1" value="&lt;div&gt;packages:&lt;/div&gt;&lt;div&gt;*getwidget&lt;/div&gt;&lt;div&gt;*flutter chart&lt;/div&gt;&lt;div&gt;*fluttersvg&lt;/div&gt;&lt;div&gt;*cached network image&lt;/div&gt;&lt;div&gt;*flutter animation&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-276" y="71" width="120" height="119" as="geometry" />
         </mxCell>
-        <mxCell id="Lf4XHQg1zKBJ01BfvgF0-2" value="&lt;div&gt;60/30/10:color combination&lt;/div&gt;&lt;div&gt;4font sizes/2fontweight&lt;/div&gt;&lt;div&gt;8pt grip system:spacing alignment&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="Lf4XHQg1zKBJ01BfvgF0-2" value="&lt;div&gt;60/30/10:color combination&lt;/div&gt;&lt;div&gt;4font sizes/2fontweight&lt;/div&gt;&lt;div&gt;8pt grip system:spacing alignment&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="-276" y="210" width="116" height="116" as="geometry" />
         </mxCell>
       </root>
