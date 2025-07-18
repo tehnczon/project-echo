@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" version="28.0.5">
   <diagram name="Page-1" id="9R6yXRowSwLRwM4YF0jt">
-    <mxGraphModel dx="1668" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#000000,#000000)" math="0" shadow="0">
+    <mxGraphModel dx="1785" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#000000,#000000)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -90,6 +90,9 @@
           <mxGeometry x="229.99" y="267" width="126" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PzX3rmqmM5q8GLzGmmiX-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="-NJHEdXc2_ys1D_Juve5-20" target="PzX3rmqmM5q8GLzGmmiX-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_if-oOEPhQZ48nYMYrpP-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-NJHEdXc2_ys1D_Juve5-20" target="_if-oOEPhQZ48nYMYrpP-38">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-NJHEdXc2_ys1D_Juve5-20" value="password" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
@@ -792,6 +795,14 @@
         <mxCell id="_if-oOEPhQZ48nYMYrpP-9" value="advance" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="193.49" y="740.5" width="152.5" height="30.25" as="geometry" />
         </mxCell>
+        <mxCell id="_if-oOEPhQZ48nYMYrpP-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_if-oOEPhQZ48nYMYrpP-10" target="_if-oOEPhQZ48nYMYrpP-36">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="173" y="796" />
+              <mxPoint x="159" y="796" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-10" value="contact support" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="192.48" y="781.25" width="152.5" height="30.25" as="geometry" />
         </mxCell>
@@ -845,6 +856,27 @@
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-29" value="type delete my account" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="-70" y="892.5" width="140" height="30.25" as="geometry" />
+        </mxCell>
+        <mxCell id="_if-oOEPhQZ48nYMYrpP-33" value="write feedback" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="89.99" y="837.63" width="140" height="30.25" as="geometry" />
+        </mxCell>
+        <mxCell id="_if-oOEPhQZ48nYMYrpP-34" value="report bug" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="87.5" y="878.75" width="140" height="30.25" as="geometry" />
+        </mxCell>
+        <mxCell id="_if-oOEPhQZ48nYMYrpP-35" value="recommendation" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="87.5" y="922.75" width="140" height="30.25" as="geometry" />
+        </mxCell>
+        <mxCell id="_if-oOEPhQZ48nYMYrpP-36" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80.5" y="828.75" width="156.5" height="141.25" as="geometry" />
+        </mxCell>
+        <mxCell id="_if-oOEPhQZ48nYMYrpP-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_if-oOEPhQZ48nYMYrpP-38" target="_if-oOEPhQZ48nYMYrpP-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_if-oOEPhQZ48nYMYrpP-38" value="forgot password" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="547.99" y="374" width="108.51" height="23.5" as="geometry" />
+        </mxCell>
+        <mxCell id="_if-oOEPhQZ48nYMYrpP-40" value="type UIC code" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="547.99" y="410.5" width="108.51" height="23.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
