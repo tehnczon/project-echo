@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" version="28.0.5">
   <diagram name="Page-1" id="9R6yXRowSwLRwM4YF0jt">
-    <mxGraphModel dx="1785" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#000000,#000000)" math="0" shadow="0">
+    <mxGraphModel dx="3468" dy="1836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#000000,#000000)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -807,40 +807,40 @@
           <mxGeometry x="192.48" y="781.25" width="152.5" height="30.25" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-15" value="&lt;li data-start=&quot;638&quot; data-end=&quot;699&quot;&gt;&lt;p data-start=&quot;640&quot; data-end=&quot;699&quot;&gt;Age group pie or bar chart (e.g. 15–19, 20–24, 25–29, etc.)&lt;/p&gt;&lt;p data-start=&quot;702&quot; data-end=&quot;729&quot;&gt;Sex assigned at birth (M/F)&lt;/p&gt;&lt;p data-start=&quot;732&quot; data-end=&quot;795&quot;&gt;Gender identity (Bar chart: Cisgender, Transgender, Non-binary)&lt;/p&gt;&lt;p data-start=&quot;798&quot; data-end=&quot;840&quot;&gt;Highest education attainment (Stacked bar)&lt;/p&gt;&lt;p data-start=&quot;843&quot; data-end=&quot;882&quot;&gt;Civil status (Single, Married, Widowed)&lt;br&gt;&lt;br&gt;Heatmap of permanent address (Barangay-level)&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;638&quot; data-end=&quot;699&quot;&gt;&lt;br&gt;&lt;/li&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-220" y="44" width="120" height="422.75" as="geometry" />
+          <mxGeometry x="-410" y="35.5" width="120" height="422.75" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-16" value="&lt;br&gt;&lt;li data-start=&quot;1527&quot; data-end=&quot;1572&quot;&gt;&lt;p data-start=&quot;1529&quot; data-end=&quot;1572&quot;&gt;% of respondents who are currently pregnant&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;1573&quot; data-end=&quot;1619&quot;&gt;&lt;p data-start=&quot;1575&quot; data-end=&quot;1619&quot;&gt;Relationship status vs pregnancy correlation&lt;/p&gt;&lt;/li&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-220" y="416.75" width="120" height="170" as="geometry" />
+          <mxGeometry x="-410" y="408.25" width="120" height="170" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-17" value="Reproductive Health" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=light-dark(#000000,#00CC00);" vertex="1" parent="1">
-          <mxGeometry x="-230" y="417.75" width="140" height="30" as="geometry" />
+          <mxGeometry x="-420" y="409.25" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-18" value="Demographics" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=light-dark(#000000,#00CC00);" vertex="1" parent="1">
-          <mxGeometry x="-204" y="40" width="60" height="30" as="geometry" />
+          <mxGeometry x="-394" y="31.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-19" value="Pie chart: Yes / No / Don’t know" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-220" y="556.75" width="120" height="122.25" as="geometry" />
+          <mxGeometry x="-410" y="548.25" width="120" height="122.25" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-20" value="Parental HIV Status" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=light-dark(#000000,#00CC00);" vertex="1" parent="1">
-          <mxGeometry x="-230" y="556.75" width="140" height="30" as="geometry" />
+          <mxGeometry x="-420" y="548.25" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-21" value="&lt;br&gt;&lt;li data-end=&quot;2599&quot; data-start=&quot;2555&quot;&gt;&lt;p data-end=&quot;2599&quot; data-start=&quot;2557&quot;&gt;Bar chart by sex type (M/F) and condom use&lt;/p&gt;&lt;p data-end=&quot;2646&quot; data-start=&quot;2602&quot;&gt;Heatmap by barangay of risky sexual behavior&lt;/p&gt;&lt;/li&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-220" y="636.75" width="120" height="163.37" as="geometry" />
+          <mxGeometry x="-410" y="628.25" width="120" height="163.37" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-22" value=" Sexual Practices" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=light-dark(#000000,#00CC00);" vertex="1" parent="1">
-          <mxGeometry x="-230" y="636.75" width="140" height="30" as="geometry" />
+          <mxGeometry x="-420" y="628.25" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-23" value="&lt;br&gt;&lt;li data-end=&quot;3112&quot; data-start=&quot;3090&quot;&gt;&lt;p data-end=&quot;3112&quot; data-start=&quot;3092&quot;&gt;OFW status bar chart&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-end=&quot;3149&quot; data-start=&quot;3115&quot;&gt;School attendance vs risk behavior&lt;/p&gt;&lt;/li&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-220" y="782.75" width="120" height="140" as="geometry" />
+          <mxGeometry x="-410" y="774.25" width="120" height="140" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-24" value="Occupation &amp;amp; Migration" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=light-dark(#000000,#00CC00);" vertex="1" parent="1">
-          <mxGeometry x="-230" y="782.75" width="140" height="30" as="geometry" />
+          <mxGeometry x="-420" y="774.25" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-25" value="&lt;br&gt;&lt;li data-end=&quot;3628&quot; data-start=&quot;3600&quot;&gt;&lt;p data-end=&quot;3628&quot; data-start=&quot;3602&quot;&gt;Bar chart of co-infections&lt;/p&gt;&lt;p data-end=&quot;3670&quot; data-start=&quot;3631&quot;&gt;Heatmap of barangays with highest cases&lt;/p&gt;&lt;/li&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-220" y="905.5" width="120" height="140" as="geometry" />
+          <mxGeometry x="-410" y="897" width="120" height="140" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-26" value="Health Conditions" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=light-dark(#000000,#00CC00);" vertex="1" parent="1">
-          <mxGeometry x="-230" y="905.5" width="140" height="30" as="geometry" />
+          <mxGeometry x="-420" y="897" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_if-oOEPhQZ48nYMYrpP-27" target="_if-oOEPhQZ48nYMYrpP-29">
           <mxGeometry relative="1" as="geometry" />
