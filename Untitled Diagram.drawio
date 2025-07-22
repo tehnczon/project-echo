@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" version="28.0.6">
   <diagram name="Page-1" id="9R6yXRowSwLRwM4YF0jt">
-    <mxGraphModel dx="2390" dy="1080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#000000,#000000)" math="0" shadow="0">
+    <mxGraphModel dx="3032" dy="1530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#000000,#000000)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -354,16 +354,13 @@
         <mxCell id="_if-oOEPhQZ48nYMYrpP-1" value="edit _profile" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="245" y="466.25" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_if-oOEPhQZ48nYMYrpP-3" value="logout" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" parent="1" vertex="1">
-          <mxGeometry x="30" y="578.25" width="120" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-7" value="terms and condition" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="250" y="504.13" width="109.99" height="30.25" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-8" value="Privacy policy" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="542" width="120" height="30.25" as="geometry" />
         </mxCell>
-        <mxCell id="_if-oOEPhQZ48nYMYrpP-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="_if-oOEPhQZ48nYMYrpP-9" target="_if-oOEPhQZ48nYMYrpP-28" edge="1">
+        <mxCell id="_if-oOEPhQZ48nYMYrpP-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="_if-oOEPhQZ48nYMYrpP-3" target="_if-oOEPhQZ48nYMYrpP-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_if-oOEPhQZ48nYMYrpP-9" value="advance" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
@@ -525,8 +522,17 @@
         <mxCell id="_if-oOEPhQZ48nYMYrpP-81" value="OFW" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="_if-oOEPhQZ48nYMYrpP-66" vertex="1">
           <mxGeometry y="450" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="K7DsIm-0Ml7HJy8GoRwn-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.558;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_if-oOEPhQZ48nYMYrpP-10" target="_if-oOEPhQZ48nYMYrpP-36">
+        <mxCell id="K7DsIm-0Ml7HJy8GoRwn-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.558;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="_if-oOEPhQZ48nYMYrpP-10" target="_if-oOEPhQZ48nYMYrpP-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzqThoeFiSmSlgV0JjDB-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_if-oOEPhQZ48nYMYrpP-9" target="_if-oOEPhQZ48nYMYrpP-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="262" y="589" as="sourcePoint" />
+            <mxPoint y="793" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_if-oOEPhQZ48nYMYrpP-3" value="logout" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="570" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
